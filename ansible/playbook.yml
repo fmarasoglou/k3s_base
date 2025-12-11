@@ -3,4 +3,5 @@
   hosts: localhost
   roles:
     - k3s
-    - openfaas
+    - openfaas-cli
+    - openfaas-ce
