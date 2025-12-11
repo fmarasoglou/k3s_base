@@ -1,0 +1,17 @@
+---
+- name: Create separate namespaces
+  shell: kubectl apply -f https://raw.githubusercontent.com/openfaas/faas-netes/master/namespaces.yml
+
+- name: Add helm repo
+  shell: helm repo add openfaas https://openfaas.github.io/faas-netes/
+
+- name: Update helm repo
+  shell: helm repo update  
+
+- name: Install Openfaas CE with k3s conf
+  shell: helm upgrade openfaas --install openfaas/openfaas --namespace openfaas --kubeconfig /etc/rancher/k3s/k3s.yaml
+
+
+
+
+  
