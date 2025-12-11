@@ -1,5 +1,5 @@
 ---
 - name: k3s playbook
-  hosts: cloudwork
+  hosts: localhost
   roles:
     - k3s
