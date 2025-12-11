@@ -1,6 +1,5 @@
 ---
-- name: Install K3s
-  hosts: all
-  become: yes
+- name: k3s playbook
+  hosts: cloudwork
   roles:
     - k3s
