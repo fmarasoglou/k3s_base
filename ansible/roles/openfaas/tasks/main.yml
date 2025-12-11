@@ -1,0 +1,3 @@
+---
+- name: Install OpenFaaS cli
+  shell: curl -sSL https://cli.openfaas.com | sudo -E sh
