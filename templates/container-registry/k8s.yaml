@@ -74,12 +74,8 @@ kind: Ingress
 metadata:
   name: docker-registry-ingress
   namespace: docker-registry
-  # annotations:
-  #   # Optional: increase body size for large pushes
-  #   traefik.ingress.kubernetes.io/router.entrypoints: web
-  #   traefik.ingress.kubernetes.io/router.middlewares: docker-registry-strip-prefix
+
 spec:
-  # ingressClassName: traefik
   rules:
     - host: my-registry.com
       http:
